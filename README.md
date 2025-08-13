@@ -1,3 +1,5 @@
+### instructions to clone
 git clone git@github.com:umarmir/ruya-de-luxe.git && cd ruyadeluxe
 
+### instructions to run
 docker compose up -d --build
