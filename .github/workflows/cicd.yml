@@ -7,7 +7,7 @@ on:
 
 jobs:
   remote_deploy:
-    runs-on: [self-hosted, OO]
+    runs-on: [self-hosted, aminlodhi]
     steps:
       - uses: actions/checkout@v4
       - run: |
