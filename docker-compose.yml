@@ -9,21 +9,21 @@ services:
     volumes:
       - mongo_data:/data/db
     ports:
-      - "27020:27017"
+      - "27030:27017"
 
   server:
     build: ./server
     restart: always
     environment:
       PORT: 5000
-      MONGO_URI: mongodb://mongo:27020/ruyadeluxe
+      MONGO_URI: mongodb://mongo:27030/ruyadeluxe
       CORS_ORIGIN: "*"
       ADMIN_TOKEN: "changeme-admin-token"
       BRAND_NAME: "Ruya_de_Luxe"
     depends_on:
       - mongo
     ports:
-      - "5010:5000"
+      - "5040:5000"
 
   client:
     build: ./client
