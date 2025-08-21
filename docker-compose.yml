@@ -23,7 +23,7 @@ services:
     depends_on:
       - mongo
     ports:
-      - "5010:5000"
+      - "5010:5020"
 
   client:
     build: ./client
